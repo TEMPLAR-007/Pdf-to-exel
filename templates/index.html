@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upload PDF</title>
+</head>
+<body>
+    <h1>Upload PDFs for Processing</h1>
+    <form method="POST" enctype="multipart/form-data" action="/upload">
+        <label for="pdf_files">Select PDF files to upload (you can select multiple):</label>
+        <input type="file" name="pdf_files" accept="application/pdf" multiple>
+        <button type="submit">Upload PDFs</button>
+    </form>
+</body>
+</html>
